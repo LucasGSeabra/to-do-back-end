@@ -1,6 +1,7 @@
-const Todo = require('./todo')
+import Todo from './todo.js'
+
 
 Todo.methods(['get', 'post', 'put', 'delete'])
 Todo.updateOptions({new: true, runValidators: true})
 
-module.exports = Todo
+export default Todo
