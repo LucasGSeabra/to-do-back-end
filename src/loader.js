@@ -1,4 +1,6 @@
 import server from './config/server.js'
 import database from './config/database.js'
-require('./config/server')
-require('./config/database')
+import routes from './config/routes/routes.js'
+
+routes(server)
+
