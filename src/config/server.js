@@ -1,13 +1,13 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import cors from 'cors'
 
 const port = 3003
 
 const server = express()
 
-server.use(bodyParser.urlencoded({
-    extended: true
-}))
+server.use(cors)
+server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
 
 server.listen(port, function() {
