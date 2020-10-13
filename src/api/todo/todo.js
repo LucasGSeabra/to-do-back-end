@@ -1,5 +1,5 @@
-const restful = require('node-restful')
-const mongoose = restful.mongoose
+import restful from 'node-restful'
+import mongoose from 'mongoose'
 
 const todoSchema = new mongoose.Schema({
     description: {type: String, required: true},
@@ -7,4 +7,4 @@ const todoSchema = new mongoose.Schema({
     createdAt: {type: Date, default: Date.now}
 })
 
-module.exports = restful.model('Todo', todoSchema)
+export default restful.model('Todo', todoSchema)
