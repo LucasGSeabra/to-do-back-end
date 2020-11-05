@@ -1,17 +1,17 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import cors from 'cors'
+import cors from './cors.js'
 
 const port = 3003
 
 const server = express()
 
-server.use(cors)
 server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
+server.use(cors)
 
 server.listen(port, function() {
-    console.log('running on port 3003')
+    console.log(`running on port ${port}`)
 })
 
 export default server
