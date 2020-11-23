@@ -1,9 +1,12 @@
 import mongoose from 'mongoose'
 
-mongoose.Promise = global.Promise
+async function dbConnect() {
 
-const uri = "mongodb+srv://admin:admin@ldnm.i3jjc.mongodb.net/to-do?retryWrites=true&w=majority"
+    mongoose.Promise = global.Promise
+    await mongoose.connect(process.env.DB_URI, {useNewUrlParser: true})
 
-mongoose.connect(uri, {useNewUrlParser: true})
+    return mongoose
 
-export default mongoose
+}
+
+export default dbConnect
