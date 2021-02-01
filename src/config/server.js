@@ -2,7 +2,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from './cors.js'
 
-const port = 3003
+const port = (process.env.PORT || 3003)
 
 const server = express()
 
