@@ -1340,7 +1340,7 @@ netmask@^1.0.6:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
   integrity sha1-ICl+idhvb2QA8lDZ9Pa0wZRfzTU=
 
-node-restful@^0.2.5:
+node-restful@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/node-restful/-/node-restful-0.2.6.tgz#42ab3adc8c1a5f94ed864799845f8efe311e632e"
   integrity sha1-Qqs63IwaX5TthkeZhF+O/jEeYy4=
