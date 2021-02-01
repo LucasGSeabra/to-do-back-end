@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
-
-const restful = require('node-restful')
+import restful from 'node-restful'
 
 const todoSchema = new mongoose.Schema({
     description: {type: String, required: true},
